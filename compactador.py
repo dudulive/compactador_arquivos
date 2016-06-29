@@ -5,7 +5,7 @@ import os.path
 
 class Compactador:
 	"""docstring for Compactador"""
-	def  (self, lista_arquivos):
+	def  __init__(self, lista_arquivos):
 		arquivo_zip = zipfile.ZipFile("arquivo.zip", "w")
 		for arquivo in lista_arquivos:
 			if (os.path.isfile(arquivo) and os.path.exist(arquivo)):
